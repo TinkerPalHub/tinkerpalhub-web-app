@@ -1,0 +1,72 @@
+function OurWork() {
+	return (
+		<div className="bg-[#EDEDFC]">
+			<div className="mx-auto space-y-8 w-full max-w-300 px-5 py-10 pb-10 md:py-26 lg:px-10">
+				<div className="text-center">
+					<span className="text-[#393F48] md:text-[24px] font-normal">
+						Our Work
+					</span>
+					<h2 className="text-[30px] md:text-[40px] text-[#0B0F15] font-bold">
+						Featured Projects
+					</h2>
+				</div>
+
+				<div className="grid grid-cols-1 md:auto-rows-min md:grid-cols-2 gap-8">
+					<div className="max-w-136 w-full mx-auto bg-[#FFFFFF] p-4">
+						<img src="/Frame 1000002364 (1).svg" alt="" />
+						<div className="space-y-4 rounded-sm bg-[#FFFFFF] px-4 pt-6 pb-8">
+							<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
+								LiquidsFi Web App
+							</h3>
+							<p className="text-[#393F48] lg:text-[18px] font-normal">
+								LiquidsFi is an interoperability layer that bridges EVM chains
+								and Soroban.
+							</p>
+						</div>
+					</div>
+
+					<div className="max-w-[544px] w-full mx-auto bg-[#FFFFFF] p-4">
+						<img src="/Frame 1000002364.svg" alt="" />
+						<div className="space-y-4 rounded-[4px] bg-[#FFFFFF] px-4 pt-6 pb-8">
+							<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
+								ErrandGo Mobile App
+							</h3>
+							<p className="text-[#393F48] lg:text-[18px] font-normal">
+								Connects people with helpers who can handle errands while
+								helpers earn for running errands.
+							</p>
+						</div>
+					</div>
+
+					<div className="max-w-[544px] w-full mx-auto bg-[#FFFFFF] p-4">
+						<img src="/Frame 1000002364 (2).svg" alt="" />
+						<div className="space-y-4 rounded-[4px] bg-[#FFFFFF] px-4 pt-6 pb-8">
+							<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
+								Afro Ascend
+							</h3>
+							<p className="text-[#393F48] lg:text-[18px] font-normal">
+								Empowers African talents with resources, funding and
+								international access to excel globally.
+							</p>
+						</div>
+					</div>
+
+					<div className="max-w-[544px] w-full mx-auto bg-[#FFFFFF] p-4">
+						<img className="h-auto" src="/Frame 1000002364 (3).svg" alt="" />
+						<div className="space-y-4 rounded-[4px] bg-[#FFFFFF] px-4 pt-6 pb-8">
+							<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
+								SocketFi
+							</h3>
+							<p className="text-[#393F48] lg:text-[18px] font-normal">
+								Decentralized Web3 connector for social networks Smart wallet
+								for Social Networks.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}
+
+export default OurWork;
