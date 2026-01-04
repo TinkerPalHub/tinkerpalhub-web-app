@@ -1,23 +1,26 @@
-// import { Link, useNavigate } from "react-router";
+import LogoDark from "./LogoDark";
+import LogoLight from "./LogoLight";
 
-function Logo() {
-	// const navigate = useNavigate();
-
+function Logo({ tag }) {
 	return (
-		<a
-			href="/"
-			onClick={(e) => {
-				e.preventDefault();
+		<a href="/" className="flex items-center">
+			{tag === "header" && (
+				<>
+					<LogoDark />
+					{/* <img
+						src="/tinker-pal.svg"
+						alt=""
+						className="hidden md:block h-[19.69px]"
+					/> */}
+				</>
+			)}
 
-				// navigate("/");
-				window.scrollTo({
-					top: 0,
-				});
-			}}
-			className="flex gap-1"
-		>
-			<img src="/logo.svg" alt="" />
-			<img src="/tinker-pal.svg" alt="" className="hidden md:block" />
+			{tag === "footer" && (
+				<>
+					<LogoLight />
+					{/* <img src="/tinker-pal-light.svg" alt="" className="h-[19.69px]" /> */}
+				</>
+			)}
 		</a>
 	);
 }

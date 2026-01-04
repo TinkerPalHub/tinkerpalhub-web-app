@@ -5,13 +5,13 @@ import { RiInstagramFill, RiTwitterXFill } from "react-icons/ri";
 import Logo from "./Logo";
 
 export const FOOTER_LINKS = [
-	{ href: "https://www.tiktok.com", icon: PiTiktokLogoFill },
-	{ href: "https://www.x.com", icon: RiTwitterXFill },
+	{ href: "https://www.tiktok.com/tinkerpalhub", icon: PiTiktokLogoFill },
+	{ href: "https://www.x.com/tinkerpalhub", icon: RiTwitterXFill },
 	{
-		href: "https://www.instagram.com",
+		href: "https://www.instagram.com/tinkerpalhub",
 		icon: RiInstagramFill,
 	},
-	{ href: "https://www.facebook.com", icon: FaFacebook },
+	{ href: "https://www.facebook.com/tinkerpalhub", icon: FaFacebook },
 ];
 
 export default function Footer() {
@@ -24,8 +24,9 @@ export default function Footer() {
 				<div className="flex flex-col justify-between gap-12 sm:flex-row sm:items-center">
 					<div className="flex flex-1 flex-col gap-8">
 						<div className="w-full max-w-120.75 space-y-1">
-							{/* <Logo /> */}
-							<a
+							<Logo tag="footer" />
+
+							{/* <a
 								href="/"
 								onClick={(e) => {
 									e.preventDefault();
@@ -39,9 +40,10 @@ export default function Footer() {
 							>
 								<img src="/Frame (2).svg" alt="" />
 								<img src="/Vector (2).svg" alt="" />
-							</a>
+							</a> */}
+
 							<p className="text-[18px] font-light text-[#F8F3FF]">
-								tinkerpal@gmail.com
+								info@tinkerpal.com
 							</p>
 							<p className="text-[18px] font-light text-[#F8F3FF]">
 								+12384652670
@@ -59,6 +61,7 @@ export default function Footer() {
 							{FOOTER_LINKS.map((link, i) => (
 								<Fragment key={i}>
 									<a
+										target="_blank"
 										className="font-normal text-[#F8F3FF] flex items-center gap-2"
 										href={link.href}
 									>

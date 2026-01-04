@@ -1,6 +1,6 @@
 function OurWork() {
 	return (
-		<div className="bg-[#EDEDFC]">
+		<div className="bg-[#EDEDFC]" id="projects">
 			<div className="mx-auto space-y-8 w-full max-w-300 px-5 py-10 pb-10 md:py-26 lg:px-10">
 				<div className="text-center">
 					<span className="text-[#393F48] md:text-[24px] font-normal">
@@ -25,9 +25,9 @@ function OurWork() {
 						</div>
 					</div>
 
-					<div className="max-w-[544px] w-full mx-auto bg-[#FFFFFF] p-4">
+					<div className="max-w-136 w-full mx-auto bg-[#FFFFFF] p-4">
 						<img src="/Frame 1000002364.svg" alt="" />
-						<div className="space-y-4 rounded-[4px] bg-[#FFFFFF] px-4 pt-6 pb-8">
+						<div className="space-y-4 rounded-sm bg-[#FFFFFF] px-4 pt-6 pb-8">
 							<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
 								ErrandGo Mobile App
 							</h3>
@@ -38,9 +38,9 @@ function OurWork() {
 						</div>
 					</div>
 
-					<div className="max-w-[544px] w-full mx-auto bg-[#FFFFFF] p-4">
+					<div className="max-w-136 w-full mx-auto bg-[#FFFFFF] p-4">
 						<img src="/Frame 1000002364 (2).svg" alt="" />
-						<div className="space-y-4 rounded-[4px] bg-[#FFFFFF] px-4 pt-6 pb-8">
+						<div className="space-y-4 rounded-sm bg-[#FFFFFF] px-4 pt-6 pb-8">
 							<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
 								Afro Ascend
 							</h3>
@@ -51,9 +51,9 @@ function OurWork() {
 						</div>
 					</div>
 
-					<div className="max-w-[544px] w-full mx-auto bg-[#FFFFFF] p-4">
+					<div className="max-w-136 w-full mx-auto bg-[#FFFFFF] p-4">
 						<img className="h-auto" src="/Frame 1000002364 (3).svg" alt="" />
-						<div className="space-y-4 rounded-[4px] bg-[#FFFFFF] px-4 pt-6 pb-8">
+						<div className="space-y-4 rounded-sm bg-[#FFFFFF] px-4 pt-6 pb-8">
 							<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
 								SocketFi
 							</h3>

@@ -1,3 +1,5 @@
+import CtaButtons from "./CtaButtons";
+
 const METRICS = [
 	{ title: "projects done", value: "16" },
 	{ title: "happy clients", value: "32" },
@@ -22,17 +24,7 @@ function Hero() {
 						</p>
 					</div>
 
-					<div className="flex items-center gap-4 font-normal text-base justify-center flex-wrap">
-						<a
-							href="/"
-							className="bg-[#070816] text-[#EDEDFC] p-4 rounded-xl w-42 text-center"
-						>
-							View Projects
-						</a>
-						<button className="bg-[#4A4EDD] text-[#EDEDFC] p-4 rounded-xl w-42 text-center">
-							Get In Touch
-						</button>
-					</div>
+					<CtaButtons tag="hero" />
 				</div>
 
 				<div className="grid grid-cols-2 gap-1 md:grid-cols-4 lg:px-10 [@media(max-width:379px)]:grid-cols-1">
