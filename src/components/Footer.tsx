@@ -16,31 +16,12 @@ export const FOOTER_LINKS = [
 
 export default function Footer() {
 	return (
-		<footer
-			className="pt-25 pb-12.5 max-w-360 mx-auto w-full bg-[#070816] px-4"
-			id="faqs"
-		>
+		<footer className="pt-25 pb-12.5 bg-[#070816] px-4">
 			<div className="max-w-280 w-full mx-auto text-[#00072D] animate-FadeIn">
 				<div className="flex flex-col justify-between gap-12 sm:flex-row sm:items-center">
 					<div className="flex flex-1 flex-col gap-8">
 						<div className="w-full max-w-120.75 space-y-1">
 							<Logo tag="footer" />
-
-							{/* <a
-								href="/"
-								onClick={(e) => {
-									e.preventDefault();
-
-									// navigate("/");
-									window.scrollTo({
-										top: 0,
-									});
-								}}
-								className="flex gap-1"
-							>
-								<img src="/Frame (2).svg" alt="" />
-								<img src="/Vector (2).svg" alt="" />
-							</a> */}
 
 							<p className="text-[18px] font-light text-[#F8F3FF]">
 								info@tinkerpal.com
@@ -53,8 +34,8 @@ export default function Footer() {
 
 					<div className="text-[#F8F3FF] space-y-5">
 						<div className="text-[#F8F3FF] flex gap-10 sm:justify-end">
-							<a href="/terms-of-use">Services</a>
-							<a href="/privacy-policy">Projects</a>
+							<a href="#services">Services</a>
+							<a href="#projects">Projects</a>
 						</div>
 
 						<div className="flex flex-wrap w-fit gap-5 sm:ml-auto">
@@ -74,7 +55,7 @@ export default function Footer() {
 				</div>
 
 				<p className="text-center text-white mt-4">
-					© {new Date().getFullYear()} ErrandGo. All rights reserved
+					© {new Date().getFullYear()} TinkerPal Hub. All rights reserved
 				</p>
 			</div>
 		</footer>
