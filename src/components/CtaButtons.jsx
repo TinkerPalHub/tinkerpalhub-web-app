@@ -3,7 +3,7 @@ function CtaButtons({ tag }) {
 		<>
 			{tag === "header" && (
 				<>
-					<div className="hidden items-center gap-4 font-normal text-base lg:flex">
+					<div className="hidden items-center gap-4 font-normal text-base md:flex">
 						<a
 							href="#projects"
 							className="bg-[#070816] text-[#EDEDFC] h-12 p-4 rounded-xl w-42 flex items-center justify-center"

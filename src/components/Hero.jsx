@@ -9,16 +9,16 @@ const METRICS = [
 
 function Hero() {
 	return (
-		<div className="bg-linear-to-b from-white to-[#E6E7FF] pt-40 pb-30">
-			<div className="mx-auto w-full max-w-300 space-y-14 px-5">
+		<div className="bg-linear-to-b from-white to-[#E6E7FF] py-10 sm:pt-20 sm:pb-20">
+			<div className="mx-auto w-full max-w-270 space-y-20 px-4">
 				<div className="space-y-12">
 					<div className="space-y-6 text-center text-[#1C1C1E] max-w-245.75 mx-auto w-full">
-						<h1 className="text-[36px] font-bold md:text-[64px] font-bricolage">
+						<h1 className="text-[32px] font-bold md:text-[64px] font-bricolage">
 							Building Digital <span className="text-[#4A4EDD]">Products</span>{" "}
 							That Work and Scale
 						</h1>
 
-						<p className="mx-auto max-w-200 w-full font-light md:text-[24px]">
+						<p className="text-[18px] mx-auto max-w-200 w-full font-light md:text-[24px]">
 							TinkerPal Hub crafts and builds mobile apps, web apps, and
 							websites designed and engineered to solve real business problems
 						</p>
@@ -27,21 +27,18 @@ function Hero() {
 					<CtaButtons tag="hero" />
 				</div>
 
-				<div className="grid grid-cols-2 gap-1 md:grid-cols-4 lg:px-10 [@media(max-width:379px)]:grid-cols-1">
+				<div className="grid grid-cols-2 md:grid-cols-4 px-5 py-10 max-w-235 w-full mx-auto bg-[#F7F9FD] rounded-4xl">
 					{METRICS.map((metric, i) => (
 						<div
 							key={i}
-							className={`flex flex-col justify-center rounded-lg bg-[#F7F9FD] px-5 py-10 [@media(max-width:379px)]:items-center ${
-								metric.title === "paid out" &&
-								"sm:order-4 [@media(max-width:379px)]:order-4"
-							}`}
+							className={`flex flex-col justify-center px-5 py-5 border-[#EDEDFC] border-r-2 border-b-2 nth-[2n]:border-r-0 nth-last-[-n+2]:border-b-0 md:border-b-0 md:border-r-0 md:border-l-2 md:nth-[4n+1]:border-l-0`}
 						>
 							<div
-								className={`${"text-[#3B3EB1]"} text-[32px] font-normal lg:text-[48px] font-bricolage`}
+								className={`text-[#3B3EB1] text-[40px] font-bold lg:text-[56px] font-bricolage`}
 							>
 								{metric.value}
 							</div>
-							<div className="text-[15px] text-[#636366] lg:text-[20px]">
+							<div className="text-[18px] font-normal text-[#5E5F70] lg:text-[24px]">
 								{metric.title}
 							</div>
 						</div>
