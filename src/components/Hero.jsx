@@ -1,8 +1,8 @@
 import CtaButtons from "./CtaButtons";
 
 const METRICS = [
-	{ title: "projects done", value: "16" },
-	{ title: "happy clients", value: "32" },
+	{ title: "projects done", value: "6+" },
+	{ title: "happy clients", value: "5" },
 	{ title: "experience", value: "5+" },
 	{ title: "retention rate", value: "98%" },
 ];
